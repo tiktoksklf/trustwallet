@@ -1,7 +1,7 @@
 {
   "name": "Trust Wallet",
   "short_name": "Wallet",
-  "start_url": "home_pwa.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
