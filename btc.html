@@ -1,5 +1,5 @@
 <html style="width: auto;
-  height: auto;" data-theme="light"><head>
+  height: auto;" data-theme="light"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_hhzBng"></div><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
@@ -12,7 +12,184 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <title>Trust Wallet</title>
-</head>
+<style>@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px;
+    }
+
+.trust-wallet-one-tap .header .title {
+      color: #1e2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+.trust-wallet-one-tap .header .subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .header .close {
+      color: #1e2329;
+      cursor: pointer;
+    }
+
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1e2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474d57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474d57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #fff;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #fff;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2FwcC9zcmMvb25lVGFwL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0UsMkJBQTJCO0VBQzdCO0VBQ0E7SUFDRSwwQkFBMEI7RUFDNUI7QUFDRjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFHRTtJQUNFLGFBQWE7RUFDZjs7QUFFQTtJQUNFLGdCQUFnQjtFQUNsQjs7QUFFQTtJQUNFLHNCQUFzQjtFQUN4Qjs7QUFFQTtJQUNFLGtCQUFrQjtFQUNwQjs7QUFFQTtJQUNFLGFBQWE7RUFDZjs7QUFFQTtJQUNFLHNCQUFzQjtFQUN4Qjs7QUFFQTtJQUNFLG1CQUFtQjtFQUNyQjs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLHVCQUF1QjtFQUN6Qjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLGdEQUFnRDtJQUNoRCw0REFBNEQ7SUFDNUQsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsK0NBQStDO0lBQy9DLGVBQWU7SUFDZixXQUFXO0lBQ1gsWUFBWTtJQUNaLGFBQWE7RUFDZjs7QUFFQTtJQUNFLFNBQVM7SUFDVCxnQ0FBZ0M7SUFDaEMsa0JBQWtCO0VBdUJwQjs7QUFyQkU7TUFDRSxTQUFTO0lBQ1g7O0FBRUE7TUFDRSxjQUFjO01BQ2QsZUFBZTtNQUNmLGdCQUFnQjtNQUNoQixpQkFBaUI7SUFDbkI7O0FBRUE7TUFDRSxjQUFjO01BQ2QsZUFBZTtNQUNmLGlCQUFpQjtJQUNuQjs7QUFFQTtNQUNFLGNBQWM7TUFDZCxlQUFlO0lBQ2pCOztBQUdGO0lBQ0UsaUJBQWlCO0lBQ2pCLFNBQVM7RUFtQlg7O0FBakJFO01BQ0UsU0FBUztNQUNULFdBQVc7SUFjYjs7QUFaRTtRQUNFLGNBQWM7UUFDZCxlQUFlO1FBQ2YsZ0JBQWdCO1FBQ2hCLGlCQUFpQjtNQUNuQjs7QUFFQTtRQUNFLGNBQWM7UUFDZCxlQUFlO1FBQ2YsaUJBQWlCO01BQ25COztBQUlKO0lBQ0UsU0FBUztJQUNULGNBQWM7RUFLaEI7O0FBSEU7TUFDRSxjQUFjO0lBQ2hCOztBQUdGO0lBQ0UsV0FBVztFQUNiOztBQUVBO0lBQ0UsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7RUFRZDs7QUFORTtNQUNFLFdBQVc7TUFDWCxlQUFlO01BQ2YsZ0JBQWdCO01BQ2hCLGlCQUFpQjtJQUNuQjs7QUFHRjtJQUNFLGlCQUFpQjtFQUNuQjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFHRjtFQUNFLHNCQUFzQjtFQUN0QiwrREFBMEU7RUFDMUUsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwrREFBeUU7RUFDekUsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwrREFBMkU7RUFDM0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbIkBrZXlmcmFtZXMgc2xpZGUtaW4tb25lLXRhcCB7XG4gIGZyb20ge1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSg4MHB4KTtcbiAgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCk7XG4gIH1cbn1cblxuLnRydXN0LWhpZGUtZ3JhY2VmdWxseSB7XG4gIG9wYWNpdHk6IDA7XG59XG5cbi50cnVzdC13YWxsZXQtb25lLXRhcCB7XG4gIC5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cblxuICAuc2VtaWJvbGQge1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIH1cblxuICAuYmluYW5jZS1wbGV4IHtcbiAgICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICB9XG5cbiAgLnJvdW5kZWQtZnVsbCB7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB9XG5cbiAgLmZsZXgge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gIH1cblxuICAuZmxleC1jb2wge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cblxuICAuaXRlbXMtY2VudGVyIHtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgLnNwYWNlLWJldHdlZW4ge1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgfVxuXG4gIC5qdXN0aWZ5LWNlbnRlciB7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cblxuICAudy1mdWxsIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG4gIC5ib3gge1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjVzIGN1YmljLWJlemllcigwLCAwLCAwLCAxLjQzKTtcbiAgICBhbmltYXRpb246IHNsaWRlLWluLW9uZS10YXAgMC41cyBjdWJpYy1iZXppZXIoMCwgMCwgMCwgMS40Myk7XG4gICAgd2lkdGg6IDM4NHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gICAgYmFja2dyb3VuZDogI2ZmZjtcbiAgICBib3gtc2hhZG93OiAwcHggMnB4IDRweCAwcHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgcmlnaHQ6IDMwcHg7XG4gICAgYm90dG9tOiAzMHB4O1xuICAgIHotaW5kZXg6IDEwMjA7XG4gIH1cblxuICAuaGVhZGVyIHtcbiAgICBnYXA6IDE1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XG4gICAgcGFkZGluZzogMTBweCAxOHB4O1xuXG4gICAgLmxlZnQtaXRlbXMge1xuICAgICAgZ2FwOiAxNXB4O1xuICAgIH1cblxuICAgIC50aXRsZSB7XG4gICAgICBjb2xvcjogIzFlMjMyOTtcbiAgICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICBsaW5lLWhlaWdodDogMjhweDtcbiAgICB9XG5cbiAgICAuc3VidGl0bGUge1xuICAgICAgY29sb3I6ICM0NzRkNTc7XG4gICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICBsaW5lLWhlaWdodDogMjBweDtcbiAgICB9XG5cbiAgICAuY2xvc2Uge1xuICAgICAgY29sb3I6ICMxZTIzMjk7XG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfVxuICB9XG5cbiAgLmJvZHkge1xuICAgIHBhZGRpbmc6IDlweCAxOHB4O1xuICAgIGdhcDogMTBweDtcblxuICAgIC5yaWdodC1pdGVtcyB7XG4gICAgICBnYXA6IDEwcHg7XG4gICAgICB3aWR0aDogMTAwJTtcblxuICAgICAgLndhbGxldC10aXRsZSB7XG4gICAgICAgIGNvbG9yOiAjMWUyMzI5O1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAyMHB4O1xuICAgICAgfVxuXG4gICAgICAud2FsbGV0LXN1YnRpdGxlIHtcbiAgICAgICAgY29sb3I6ICM0NzRkNTc7XG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgbGluZS1oZWlnaHQ6IDIwcHg7XG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgLmNvbm5lY3QtaW5kaWNhdG9yIHtcbiAgICBnYXA6IDE1cHg7XG4gICAgcGFkZGluZzogOHB4IDA7XG5cbiAgICAuZmxvdy1pY29uIHtcbiAgICAgIGNvbG9yOiAjNDc0ZDU3O1xuICAgIH1cbiAgfVxuXG4gIC5sb2FkaW5nLWNvbG9yIHtcbiAgICBjb2xvcjogI2ZmZjtcbiAgfVxuXG4gIC5idXR0b24ge1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgb3V0bGluZTogMnB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIG91dGxpbmUtb2Zmc2V0OiAycHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDUsIDAsIDI1NSk7XG4gICAgYm9yZGVyLWNvbG9yOiByZ2IoMjI5LCAyMzEsIDIzNSk7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDQ1cHg7XG5cbiAgICAuYnV0dG9uLXRleHQge1xuICAgICAgY29sb3I6ICNmZmY7XG4gICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgbGluZS1oZWlnaHQ6IDIwcHg7XG4gICAgfVxuICB9XG5cbiAgLmZvb3RlciB7XG4gICAgbWFyZ2luOiAyMHB4IDMwcHg7XG4gIH1cblxuICAuY2hlY2staWNvbiB7XG4gICAgY29sb3I6ICNmZmY7XG4gIH1cbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnQmluYW5jZSc7XG4gIHNyYzogdXJsKCcuL2ZvbnRzL2JpbmFuY2VQbGV4L0JpbmFuY2VQbGV4LVJlZ3VsYXIub3RmJykgZm9ybWF0KCdvcGVudHlwZScpO1xuICBmb250LXdlaWdodDogNDAwO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICBzcmM6IHVybCgnLi9mb250cy9iaW5hbmNlUGxleC9CaW5hbmNlUGxleC1NZWRpdW0ub3RmJykgZm9ybWF0KCdvcGVudHlwZScpO1xuICBmb250LXdlaWdodDogNTAwO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICBzcmM6IHVybCgnLi9mb250cy9iaW5hbmNlUGxleC9CaW5hbmNlUGxleC1TZW1pQm9sZC5vdGYnKSBmb3JtYXQoJ29wZW50eXBlJyk7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
 <body style="width: auto;
     height: auto;
     margin: 0;"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_i2NMhk"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trust Wallet</title><script defer="defer" src="popup.js"></script><style>/*
@@ -4331,7 +4508,7 @@ font-style: normal;
   </button>
 </div>
 </div>
-<div class="flex-grow text-center overflow-hidden mx-4"><h5 class="typography-header-18 text-utility-1-default font-semibold truncate  text-unset  ">BTC</h5></div><div class="flex w-8 justify-end"></div></div><div class="relative flex flex-col flex-grow w-full h-full self-center pt-2 undefined md:max-w-[438px]"><div class="infinite-scroll-component__outerdiv"><div class="infinite-scroll-component tw-scrollbar pb-4" style="height: 1186px; overflow: auto; display: flex; flex-direction: column;"><div class="flex flex-col space-y-6"><div class="flex flex-col items-center"><div class="flex w-full"><div role="button" class="outline-0  cursor-pointer" tabindex="0"><div class="flex space-x-1 items-start"><svg class="text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.59998 6C1.59998 3.79086 3.39084 2 5.59998 2H11.2C13.4091 2 15.2 3.79086 15.2 6V18.0021H18.2769C19.4494 18.0021 20.4 17.0515 20.4 15.8791V15.4511C20.4 14.5149 19.6411 13.756 18.7049 13.756C17.4083 13.756 16.3573 12.7049 16.3573 11.4084V8.85026C16.3571 8.83802 16.3571 8.82579 16.3573 8.81362V7.29059C16.3573 7.02538 16.4627 6.77102 16.6502 6.58349L19.7633 3.47037L19.7835 3.45016L20.6849 2.54885C21.0753 2.15832 21.7086 2.15832 22.099 2.54885C22.4896 2.93938 22.4896 3.57254 22.099 3.96306L21.4805 4.58166V8.05192C21.4805 8.51078 21.1681 8.91077 20.723 9.02206L18.3573 9.61349V11.4084C18.3573 11.6004 18.5129 11.756 18.7049 11.756C20.7456 11.756 22.4 13.4103 22.4 15.4511V15.8791C22.4 18.1562 20.5541 20.0021 18.2769 20.0021H15.1664C14.9751 21.1362 13.9884 22 12.8 22H3.99998C2.67449 22 1.59998 20.9254 1.59998 19.6V6ZM3.19998 8.4H13.6V12.0214H3.19998V8.4ZM5.59998 15C6.15226 15 6.59998 15.4477 6.59998 16V17.6C6.59998 18.1523 6.15226 18.6 5.59998 18.6C5.04769 18.6 4.59998 18.1523 4.59998 17.6V16C4.59998 15.4477 5.04769 15 5.59998 15Z" fill="currentColor"></path></svg><p class="body-text text-utility-1-default font-medium   text-unset  ">$7.19</p></div></div></div><div class="mt-2 mb-4"><div class="relative min-w-min"><div class="flex items-center justify-center w-full h-full flex-1 flex-row"><div class="rounded-full overflow-hidden  "><div class="w-12 h-12 flex items-center"><img alt="Bitcoin" class="w-full h-full rounded-full border-1" width="100%" height="100%" src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin/info/logo.png"></div></div></div></div></div><h2 data-testid="asset-amount" class="typography-header-32 text-utility-1-default font-semibold   text-unset  ">0</h2><number-flow-react class="typography-body-14 text-utility-1-opacity-2" aria-label="$ 0.00" data-testid="asset-fiat" role="img"></number-flow-react></div><div class="my-4 flex space-y-2 flex-col"><div class="warning-alert space-x-2 items-start"><div class="pt-0.5 empty:hidden"><svg class="text-warning-1-default" fill="none" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5229 22 22 17.5229 22 12C22 6.47716 17.5229 2 12 2C6.47716 2 2 6.47716 2 12C2 17.5229 6.47716 22 12 22ZM12 6.46429C12.5917 6.46429 13.0714 6.94399 13.0714 7.53571V12.1786C13.0714 12.7703 12.5917 13.25 12 13.25C11.4083 13.25 10.9286 12.7703 10.9286 12.1786V7.53571C10.9286 6.94399 11.4083 6.46429 12 6.46429ZM13.4286 16.1071C13.4286 16.8961 12.789 17.5357 12 17.5357C11.211 17.5357 10.5714 16.8961 10.5714 16.1071C10.5714 15.3182 11.211 14.6786 12 14.6786C12.789 14.6786 13.4286 15.3182 13.4286 16.1071Z" fill="currentColor"></path></svg></div><div class="text-utility-1-default typography-body-12 flex-1 text-start"><pre class="font-brand caption-text text-utility-1-default whitespace-pre-wrap">BTC fees may increase during network congestion. Trust Wallet gains no benefit. Tap the gas icon below to view estimated transaction costs.</pre><div class="inline-block pt-1"><p class="body-text text-utility-1-default font-normal   text-unset  "><a target="_blank" rel="noopener nofollow noreferrer" href="https://trustwallet.com/blog/addressing-blockchain-congestion">Learn More &gt;</a></p></div></div></div></div><div class="w-full flex items-center justify-between px-5"><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-25" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-26" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-send-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1098 1.46026C12.4962 0.84658 11.5012 0.84658 10.8875 1.46026L5.3875 6.96026C4.77383 7.57395 4.77383 8.56891 5.3875 9.1826C6.00119 9.79628 6.99616 9.79628 7.60985 9.1826L10.4272 6.36519V21.4286C10.4272 22.2965 11.1308 23 11.9987 23C12.8665 23 13.5701 22.2965 13.5701 21.4286V6.36519L16.3875 9.1826C17.0012 9.79628 17.9962 9.79628 18.6098 9.1826C19.2235 8.56891 19.2235 7.57395 18.6098 6.96026L13.1098 1.46026Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Send</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-27" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-28" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-receive-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1098 22.5397C12.4962 23.1534 11.5012 23.1534 10.8875 22.5397L5.3875 17.0397C4.77383 16.4261 4.77383 15.4311 5.3875 14.8174C6.00119 14.2037 6.99616 14.2037 7.60985 14.8174L10.4272 17.6348V2.57143C10.4272 1.70353 11.1308 1 11.9987 1C12.8665 1 13.5701 1.70353 13.5701 2.57143V17.6348L16.3875 14.8174C17.0012 14.2037 17.9962 14.2037 18.6098 14.8174C19.2235 15.4311 19.2235 16.4261 18.6098 17.0397L13.1098 22.5397Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Receive</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-29" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-30" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-buy-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 3.75C2.47157 3.75 1.5 4.82941 1.5 6.07894V8.0625H22.5V6.07894C22.5 4.82941 21.5285 3.75 20.25 3.75H3.75ZM1.5 17.9211V9.9375H22.5V17.9211C22.5 19.1706 21.5285 20.25 20.25 20.25H3.75C2.47157 20.25 1.5 19.1706 1.5 17.9211ZM15.75 13.875C15.1287 13.875 14.625 14.3787 14.625 15C14.625 15.6213 15.1287 16.125 15.75 16.125H18C18.6213 16.125 19.125 15.6213 19.125 15C19.125 14.3787 18.6213 13.875 18 13.875H15.75Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Buy</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-31" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-32" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-sell-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.0951 2.24964C11.3687 2.08648 11.6813 2 12.0003 2C12.3193 2 12.6318 2.08648 12.9055 2.24964C12.9161 2.25598 12.9266 2.26258 12.9369 2.26943L21.3298 7.83978L21.3317 7.84106C21.9502 8.25418 22.1335 8.96355 21.8975 9.56571C21.6695 10.1472 21.0906 10.5454 20.3932 10.5454H19.4854V17.2022H20.5208C21.3565 17.2022 22 17.8918 22 18.7002V20.502C22 21.3103 21.3565 22 20.5208 22H3.47929C2.64354 22 2 21.3103 2 20.502V18.7002C2 17.8918 2.64354 17.2022 3.47929 17.2022H4.51465V10.5454H3.60737C2.90986 10.5454 2.33101 10.1472 2.10305 9.56571C1.86698 8.96355 2.05041 8.25418 2.66884 7.84106L2.67076 7.83978L11.0637 2.26943C11.074 2.26258 11.0845 2.25598 11.0951 2.24964ZM7.59157 10.5454V17.2022H10.4615V10.5454H7.59157ZM13.5385 10.5454V17.2022H16.4084V10.5454H13.5385Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Sell</p></div></div></div><div class="w-full"><div class="flex flex-col"><div class="py-1 space-x-2 flex items-center py-2"><div class="flex-grow flex items-center space-x-1"><p class="typography-subheader-14 text-utility-1-opacity-1 font-medium   text-unset  ">Available balance</p></div><p class="body-text text-utility-1-default font-medium   text-unset  ">0 BTC</p></div></div><div class="flex flex-col"><div class="py-1 space-x-2 flex items-center py-2"><div class="flex-grow flex items-center space-x-1"><p class="typography-subheader-14 text-utility-1-opacity-1 font-medium   text-unset  ">Inscription balance</p></div><p class="body-text text-utility-1-default font-medium   text-unset  ">0 BTC</p></div></div></div></div><div class="mt-6 mb-2"><div class="border-t border-utility-1-opacity-3 "></div></div><!-- Realistic transaction -->
+<div class="flex-grow text-center overflow-hidden mx-4"><h5 class="typography-header-18 text-utility-1-default font-semibold truncate  text-unset  ">USDT</h5></div><div class="flex w-8 justify-end"></div></div><div class="relative flex flex-col flex-grow w-full h-full self-center pt-2 undefined md:max-w-[438px]"><div class="infinite-scroll-component__outerdiv"><div class="infinite-scroll-component tw-scrollbar pb-4" style="height: 1186px; overflow: auto; display: flex; flex-direction: column;"><div class="flex flex-col space-y-6"><div class="flex flex-col items-center"><div class="flex w-full"><div role="button" class="outline-0  cursor-pointer" tabindex="0"><div class="flex space-x-1 items-start"><svg class="text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.59998 6C1.59998 3.79086 3.39084 2 5.59998 2H11.2C13.4091 2 15.2 3.79086 15.2 6V18.0021H18.2769C19.4494 18.0021 20.4 17.0515 20.4 15.8791V15.4511C20.4 14.5149 19.6411 13.756 18.7049 13.756C17.4083 13.756 16.3573 12.7049 16.3573 11.4084V8.85026C16.3571 8.83802 16.3571 8.82579 16.3573 8.81362V7.29059C16.3573 7.02538 16.4627 6.77102 16.6502 6.58349L19.7633 3.47037L19.7835 3.45016L20.6849 2.54885C21.0753 2.15832 21.7086 2.15832 22.099 2.54885C22.4896 2.93938 22.4896 3.57254 22.099 3.96306L21.4805 4.58166V8.05192C21.4805 8.51078 21.1681 8.91077 20.723 9.02206L18.3573 9.61349V11.4084C18.3573 11.6004 18.5129 11.756 18.7049 11.756C20.7456 11.756 22.4 13.4103 22.4 15.4511V15.8791C22.4 18.1562 20.5541 20.0021 18.2769 20.0021H15.1664C14.9751 21.1362 13.9884 22 12.8 22H3.99998C2.67449 22 1.59998 20.9254 1.59998 19.6V6ZM3.19998 8.4H13.6V12.0214H3.19998V8.4ZM5.59998 15C6.15226 15 6.59998 15.4477 6.59998 16V17.6C6.59998 18.1523 6.15226 18.6 5.59998 18.6C5.04769 18.6 4.59998 18.1523 4.59998 17.6V16C4.59998 15.4477 5.04769 15 5.59998 15Z" fill="currentColor"></path></svg><p class="body-text text-utility-1-default font-medium   text-unset  ">$7.19</p></div></div></div><div class="mt-2 mb-4"><div class="relative min-w-min"><div class="flex items-center justify-center w-full h-full flex-1 flex-row"><div class="rounded-full overflow-hidden  "><div class="w-12 h-12 flex items-center"><img alt="Bitcoin" class="w-full h-full rounded-full border-1" width="100%" height="100%" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"></div></div></div></div></div><h2 data-testid="asset-amount" class="typography-header-32 text-utility-1-default font-semibold   text-unset  ">0</h2><number-flow-react class="typography-body-14 text-utility-1-opacity-2" aria-label="$ 0.00" data-testid="asset-fiat" role="img"></number-flow-react></div><div class="my-4 flex space-y-2 flex-col"><div class="warning-alert space-x-2 items-start"><div class="pt-0.5 empty:hidden"><svg class="text-warning-1-default" fill="none" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5229 22 22 17.5229 22 12C22 6.47716 17.5229 2 12 2C6.47716 2 2 6.47716 2 12C2 17.5229 6.47716 22 12 22ZM12 6.46429C12.5917 6.46429 13.0714 6.94399 13.0714 7.53571V12.1786C13.0714 12.7703 12.5917 13.25 12 13.25C11.4083 13.25 10.9286 12.7703 10.9286 12.1786V7.53571C10.9286 6.94399 11.4083 6.46429 12 6.46429ZM13.4286 16.1071C13.4286 16.8961 12.789 17.5357 12 17.5357C11.211 17.5357 10.5714 16.8961 10.5714 16.1071C10.5714 15.3182 11.211 14.6786 12 14.6786C12.789 14.6786 13.4286 15.3182 13.4286 16.1071Z" fill="currentColor"></path></svg></div><div class="text-utility-1-default typography-body-12 flex-1 text-start"><pre class="font-brand caption-text text-utility-1-default whitespace-pre-wrap">BTC fees may increase during network congestion. Trust Wallet gains no benefit. Tap the gas icon below to view estimated transaction costs.</pre><div class="inline-block pt-1"><p class="body-text text-utility-1-default font-normal   text-unset  "><a target="_blank" rel="noopener nofollow noreferrer" href="https://trustwallet.com/blog/addressing-blockchain-congestion">Learn More &gt;</a></p></div></div></div></div><div class="w-full flex items-center justify-between px-5"><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-25" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-26" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-send-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1098 1.46026C12.4962 0.84658 11.5012 0.84658 10.8875 1.46026L5.3875 6.96026C4.77383 7.57395 4.77383 8.56891 5.3875 9.1826C6.00119 9.79628 6.99616 9.79628 7.60985 9.1826L10.4272 6.36519V21.4286C10.4272 22.2965 11.1308 23 11.9987 23C12.8665 23 13.5701 22.2965 13.5701 21.4286V6.36519L16.3875 9.1826C17.0012 9.79628 17.9962 9.79628 18.6098 9.1826C19.2235 8.56891 19.2235 7.57395 18.6098 6.96026L13.1098 1.46026Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Send</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-27" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-28" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-receive-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1098 22.5397C12.4962 23.1534 11.5012 23.1534 10.8875 22.5397L5.3875 17.0397C4.77383 16.4261 4.77383 15.4311 5.3875 14.8174C6.00119 14.2037 6.99616 14.2037 7.60985 14.8174L10.4272 17.6348V2.57143C10.4272 1.70353 11.1308 1 11.9987 1C12.8665 1 13.5701 1.70353 13.5701 2.57143V17.6348L16.3875 14.8174C17.0012 14.2037 17.9962 14.2037 18.6098 14.8174C19.2235 15.4311 19.2235 16.4261 18.6098 17.0397L13.1098 22.5397Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Receive</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-29" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-30" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-buy-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 3.75C2.47157 3.75 1.5 4.82941 1.5 6.07894V8.0625H22.5V6.07894C22.5 4.82941 21.5285 3.75 20.25 3.75H3.75ZM1.5 17.9211V9.9375H22.5V17.9211C22.5 19.1706 21.5285 20.25 20.25 20.25H3.75C2.47157 20.25 1.5 19.1706 1.5 17.9211ZM15.75 13.875C15.1287 13.875 14.625 14.3787 14.625 15C14.625 15.6213 15.1287 16.125 15.75 16.125H18C18.6213 16.125 19.125 15.6213 19.125 15C19.125 14.3787 18.6213 13.875 18 13.875H15.75Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Buy</p></div></div><div class="flex flex-col space-y-2 items-center"><div data-tooltip-id="circle-action-tooltip-31" data-tooltip-place="top" data-tooltip-role="tooltip"><div class="flex " data-tooltip-id="button-tooltip-32" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button data-testid="asset-sell-btn" type="button" class="outline-none bg-utility-1-opacity-6 text-utility-1-default hover:bg-utility-1-opacity-5 active:bg-utility-1-opacity-4 p-2.5 icon-circle-button    "><svg class="text-utility-1-opacity-1" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.0951 2.24964C11.3687 2.08648 11.6813 2 12.0003 2C12.3193 2 12.6318 2.08648 12.9055 2.24964C12.9161 2.25598 12.9266 2.26258 12.9369 2.26943L21.3298 7.83978L21.3317 7.84106C21.9502 8.25418 22.1335 8.96355 21.8975 9.56571C21.6695 10.1472 21.0906 10.5454 20.3932 10.5454H19.4854V17.2022H20.5208C21.3565 17.2022 22 17.8918 22 18.7002V20.502C22 21.3103 21.3565 22 20.5208 22H3.47929C2.64354 22 2 21.3103 2 20.502V18.7002C2 17.8918 2.64354 17.2022 3.47929 17.2022H4.51465V10.5454H3.60737C2.90986 10.5454 2.33101 10.1472 2.10305 9.56571C1.86698 8.96355 2.05041 8.25418 2.66884 7.84106L2.67076 7.83978L11.0637 2.26943C11.074 2.26258 11.0845 2.25598 11.0951 2.24964ZM7.59157 10.5454V17.2022H10.4615V10.5454H7.59157ZM13.5385 10.5454V17.2022H16.4084V10.5454H13.5385Z" fill="currentColor"></path></svg></button></div></div><div><p class="body-text text-utility-1-default font-medium   text-unset  ">Sell</p></div></div></div><div class="w-full"><div class="flex flex-col"><div class="py-1 space-x-2 flex items-center py-2"><div class="flex-grow flex items-center space-x-1"><p class="typography-subheader-14 text-utility-1-opacity-1 font-medium   text-unset  ">Available balance</p></div><p class="body-text text-utility-1-default font-medium   text-unset  ">4345.47 USDT</p></div></div><div class="flex flex-col"><div class="py-1 space-x-2 flex items-center py-2"><div class="flex-grow flex items-center space-x-1"><p class="typography-subheader-14 text-utility-1-opacity-1 font-medium   text-unset  ">Inscription balance</p></div><p class="body-text text-utility-1-default font-medium   text-unset  ">0 USDT</p></div></div></div></div><div class="mt-6 mb-2"><div class="border-t border-utility-1-opacity-3 "></div></div><!-- Realistic transaction -->
 <div class="flex flex-row justify-between w-full px-4 py-3 bg-background-1 rounded-xl items-center border border-gray-200 mb-2">
 <!-- Icon -->
 <div class="flex items-center space-x-3">
@@ -4342,8 +4519,8 @@ font-style: normal;
   </div>
   <!-- Details -->
   <div>
-    <p class="text-sm font-semibold text-utility-1-default">Received BTC</p>
-    <p class="text-xs text-utility-1-opacity-1">Jul 14, 2025 · 1 Confirmations</p>
+    <p class="text-sm font-semibold text-utility-1-default">Received USDT</p>
+    <p class="text-xs text-utility-1-opacity-1">March 16, 2026 · 6 Confirmations</p>
   </div>
 </div>
 
@@ -4353,4 +4530,5 @@ font-style: normal;
   <p class="text-xs text-utility-1-opacity-1">$83,345.23</p>
 </div>
 </div>
-</div></div><div data-testid="asset-chart" class=" h-14 relative -mx-2 -mb-2 p-2 pb-0 flex flex-col border-line border-t"><div class="flex justify-between"><div class="flex"><div class="flex flex-col"><div role="status"><div class=""><small class="caption-text text-textThird font-normal   text-unset  ">BTC</small></div></div><div role="status"><div class=""><div class="flex items-center space-x-2 h-5"><p data-testid="asset-fiat-price" class="body-text text-utility-1-default font-medium   text-unset  ">$ 119,901.87</p><small data-testid="asset-fiat-percentage-change" class="caption-text text-success-1-default font-normal   text-unset  ">+1.83%</small></div></div></div></div><div class="h-15 w-[90px] mt-[-5px] mx-2"><canvas role="img" height="60" width="78" style="display: block; box-sizing: border-box; height: 60px; width: 78px;"></canvas></div></div><div class="flex items-start gap-2"><div class="relative w-[90px] mt-[-5px] cursor-pointer" data-testid="market-sentiment-gauge"><div><svg viewBox="-1.2 -1.2 2.4 1.4"><path d="M-0.893,-0.013A0.1,0.1,0,0,1,-0.992,-0.125A1,1,0,0,1,-0.605,-0.797A0.1,0.1,0,0,1,-0.458,-0.767L-0.458,-0.767A0.1,0.1,0,0,1,-0.484,-0.637A0.8,0.8,0,0,0,-0.794,-0.1A0.1,0.1,0,0,1,-0.893,-0.013Z" fill="#FF2121"></path><path d="M-0.435,-0.78A0.1,0.1,0,0,1,-0.388,-0.922A1,1,0,0,1,0.388,-0.922A0.1,0.1,0,0,1,0.435,-0.78L0.435,-0.78A0.1,0.1,0,0,1,0.31,-0.737A0.8,0.8,0,0,0,-0.31,-0.737A0.1,0.1,0,0,1,-0.435,-0.78Z" fill="#F0B90B"></path><path d="M0.458,-0.767A0.1,0.1,0,0,1,0.605,-0.797A1,1,0,0,1,0.992,-0.125A0.1,0.1,0,0,1,0.893,-0.013L0.893,-0.013A0.1,0.1,0,0,1,0.794,-0.1A0.8,0.8,0,0,0,0.484,-0.637A0.1,0.1,0,0,1,0.458,-0.767Z" fill="#03A66D"></path><circle cx="0.895" cy="-0.09999999999999999" r="0.14" stroke-width="0.08" fill="white" stroke="#03A66D"></circle></svg></div><div class="absolute top-[20px] left-[50%] -translate-x-1/2 w-min"><div class="flex flex-col items-center text-[11px]/[13px]"><span class="text-textSecondary">100%</span><span class="text-textSecondary ">Positive</span></div></div></div><div class="flex w-auto" data-tooltip-id="button-tooltip-33" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button type="button" class="outline-none bg-transparent text-background-1  tiny-button !p-0 w-auto  "><span class="rotate-180 transition duration-200 ease-in-out"><svg class="text-iconNormal" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.3557 7.66164C17.9925 7.1421 18.9323 7.17886 19.5259 7.77247L19.6368 7.89602C20.1212 8.49043 20.1216 9.34851 19.6368 9.94272L19.5259 10.0654L13.523 16.0683C12.7349 16.8564 11.487 16.9058 10.6414 16.2164L10.4779 16.0683L4.47497 10.0654C3.84209 9.4322 3.84192 8.40554 4.47497 7.77247L4.59852 7.66164C5.23523 7.14239 6.17428 7.17918 6.76786 7.77247L12.0004 13.0051L17.233 7.77247L17.3557 7.66164ZM19.2034 9.58934C19.1808 9.61716 19.1567 9.64426 19.1308 9.67019C19.1827 9.61824 19.2281 9.56297 19.267 9.50395L19.2034 9.58934Z" fill="currentColor"></path></svg></span></button></div></div></div></div></div></div></div></body></html>
+</div></div><div data-testid="asset-chart" class=" h-14 relative -mx-2 -mb-2 p-2 pb-0 flex flex-col border-line border-t"><div class="flex justify-between"><div class="flex"><div class="flex flex-col"><div role="status"><div class=""><small class="caption-text text-textThird font-normal   text-unset  ">BTC</small></div></div><div role="status"><div class=""><div class="flex items-center space-x-2 h-5"><p data-testid="asset-fiat-price" class="body-text text-utility-1-default font-medium   text-unset  ">$ 119,901.87</p><small data-testid="asset-fiat-percentage-change" class="caption-text text-success-1-default font-normal   text-unset  ">+1.83%</small></div></div></div></div><div class="h-15 w-[90px] mt-[-5px] mx-2"><canvas role="img" height="60" width="78" style="display: block; box-sizing: border-box; height: 60px; width: 78px;"></canvas></div></div><div class="flex items-start gap-2"><div class="relative w-[90px] mt-[-5px] cursor-pointer" data-testid="market-sentiment-gauge"><div><svg viewBox="-1.2 -1.2 2.4 1.4"><path d="M-0.893,-0.013A0.1,0.1,0,0,1,-0.992,-0.125A1,1,0,0,1,-0.605,-0.797A0.1,0.1,0,0,1,-0.458,-0.767L-0.458,-0.767A0.1,0.1,0,0,1,-0.484,-0.637A0.8,0.8,0,0,0,-0.794,-0.1A0.1,0.1,0,0,1,-0.893,-0.013Z" fill="#FF2121"></path><path d="M-0.435,-0.78A0.1,0.1,0,0,1,-0.388,-0.922A1,1,0,0,1,0.388,-0.922A0.1,0.1,0,0,1,0.435,-0.78L0.435,-0.78A0.1,0.1,0,0,1,0.31,-0.737A0.8,0.8,0,0,0,-0.31,-0.737A0.1,0.1,0,0,1,-0.435,-0.78Z" fill="#F0B90B"></path><path d="M0.458,-0.767A0.1,0.1,0,0,1,0.605,-0.797A1,1,0,0,1,0.992,-0.125A0.1,0.1,0,0,1,0.893,-0.013L0.893,-0.013A0.1,0.1,0,0,1,0.794,-0.1A0.8,0.8,0,0,0,0.484,-0.637A0.1,0.1,0,0,1,0.458,-0.767Z" fill="#03A66D"></path><circle cx="0.895" cy="-0.09999999999999999" r="0.14" stroke-width="0.08" fill="white" stroke="#03A66D"></circle></svg></div><div class="absolute top-[20px] left-[50%] -translate-x-1/2 w-min"><div class="flex flex-col items-center text-[11px]/[13px]"><span class="text-textSecondary">100%</span><span class="text-textSecondary ">Positive</span></div></div></div><div class="flex w-auto" data-tooltip-id="button-tooltip-33" data-tooltip-place="top-end" data-tooltip-role="tooltip"><button type="button" class="outline-none bg-transparent text-background-1  tiny-button !p-0 w-auto  "><span class="rotate-180 transition duration-200 ease-in-out"><svg class="text-iconNormal" fill="none" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.3557 7.66164C17.9925 7.1421 18.9323 7.17886 19.5259 7.77247L19.6368 7.89602C20.1212 8.49043 20.1216 9.34851 19.6368 9.94272L19.5259 10.0654L13.523 16.0683C12.7349 16.8564 11.487 16.9058 10.6414 16.2164L10.4779 16.0683L4.47497 10.0654C3.84209 9.4322 3.84192 8.40554 4.47497 7.77247L4.59852 7.66164C5.23523 7.14239 6.17428 7.17918 6.76786 7.77247L12.0004 13.0051L17.233 7.77247L17.3557 7.66164ZM19.2034 9.58934C19.1808 9.61716 19.1567 9.64426 19.1308 9.67019C19.1827 9.61824 19.2281 9.56297 19.267 9.50395L19.2034 9.58934Z" fill="currentColor"></path></svg></span></button></div></div></div></div></div></div></div>
+</body></html>
